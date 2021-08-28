@@ -28,8 +28,9 @@ const Cards = () => {
       scolor: "#753a88",
     },
   ];
+
   return (
-    <>
+    <div style={{ background: `linear-gradient(to left, #000, #FFF)` }}>
       {data.map(({ lang, url, fcolor, scolor }) => (
         <Card
           key={lang}
@@ -39,7 +40,7 @@ const Cards = () => {
           scolor={scolor}
         />
       ))}
-    </>
+    </div>
   );
 };
 
